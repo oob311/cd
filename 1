@@ -16,7 +16,7 @@ int main() {
  }
  else if (ch == '/' && (ch = fgetc(fp)) == '/') { 
  printf("Comment: //...\n");
- while ((ch = fgetc(fp)) != '\n'); // Skip till newline
+ while ((ch = fgetc(fp)) != '\n');
  }
  else if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '=') { 
  printf("Operator: %c\n", ch);
